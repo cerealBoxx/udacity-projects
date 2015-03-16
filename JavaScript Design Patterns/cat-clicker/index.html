@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Cat Clicker</title>
+		<style>
+			ul {
+				list-style-type: none;
+			}
+			.cat-img {
+				padding: 5px;
+			}
+			#cat-list li span {
+				display: block;
+			}
+
+			#admin-form {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<ul id="cat-list">
+			
+		</ul>
+		<div id="display-area">
+			<span id="cat-name"></span>
+			<img id="cat-img" src="" alt="cute cat">
+			<span id="counter"></span>
+		</div>
+		<button type="button" id="admin-btn" >Admin</button>
+		<div id="admin-area">
+			<form id="admin-form" action="#">
+				<label for="admin-cat-name">Cat Name</label>
+				<input type="text" id="admin-cat-name" name="">
+				<label for="admin-cat-img">Cat Image</label>
+				<input type="file" id="admin-cat-img-upload" name="">
+				<label for="admin-cat-url">Cat URL</label>
+				<input type="text" id="admin-cat-url" name="">
+				<label for="admin-counter">Cat Clicks</label>
+				<input type="text" id="admin-counter" name="">
+				<button type="cancel" id="cancel-button">Cancel</button>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<script src="js/cats.js"></script>
+		<script src="js/clicker.js"></script>
+	</body>
+</html>
